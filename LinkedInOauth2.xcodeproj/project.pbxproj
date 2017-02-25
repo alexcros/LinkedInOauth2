@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59FE673939413E089372E4BE /* Pods_LinkedInOauth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435E95B72F87E37A5EE08141 /* Pods_LinkedInOauth2.framework */; };
+		EB8358941E622532008F59E5 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8358931E622532008F59E5 /* ServiceError.swift */; };
 		EBD936011E62173C00686860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD936001E62173C00686860 /* AppDelegate.swift */; };
 		EBD936061E62173C00686860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD936041E62173C00686860 /* Main.storyboard */; };
 		EBD936081E62173C00686860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD936071E62173C00686860 /* Assets.xcassets */; };
@@ -14,9 +16,15 @@
 		EBD936131E6218BF00686860 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD936121E6218BF00686860 /* LoginViewController.swift */; };
 		EBD936151E6218E200686860 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD936141E6218E200686860 /* User.swift */; };
 		EBD936171E62199A00686860 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD936161E62199A00686860 /* Constants.swift */; };
+		EBD9361C1E62214D00686860 /* APIValidMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9361B1E62214D00686860 /* APIValidMethods.swift */; };
+		EBD9361E1E62217E00686860 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9361D1E62217E00686860 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10C79FEAB3C784740F5AC7E4 /* Pods-LinkedInOauth2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedInOauth2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LinkedInOauth2/Pods-LinkedInOauth2.debug.xcconfig"; sourceTree = "<group>"; };
+		27E5AC11F8FE43C2076AB665 /* Pods-LinkedInOauth2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedInOauth2.release.xcconfig"; path = "Pods/Target Support Files/Pods-LinkedInOauth2/Pods-LinkedInOauth2.release.xcconfig"; sourceTree = "<group>"; };
+		435E95B72F87E37A5EE08141 /* Pods_LinkedInOauth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkedInOauth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8358931E622532008F59E5 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		EBD935FD1E62173C00686860 /* LinkedInOauth2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedInOauth2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD936001E62173C00686860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD936051E62173C00686860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +34,8 @@
 		EBD936121E6218BF00686860 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EBD936141E6218E200686860 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EBD936161E62199A00686860 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EBD9361B1E62214D00686860 /* APIValidMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIValidMethods.swift; sourceTree = "<group>"; };
+		EBD9361D1E62217E00686860 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59FE673939413E089372E4BE /* Pods_LinkedInOauth2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CEF23B638A6A372A75A1437 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				435E95B72F87E37A5EE08141 /* Pods_LinkedInOauth2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBCC27A24368412A3934282F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10C79FEAB3C784740F5AC7E4 /* Pods-LinkedInOauth2.debug.xcconfig */,
+				27E5AC11F8FE43C2076AB665 /* Pods-LinkedInOauth2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EBD935F41E62173C00686860 = {
 			isa = PBXGroup;
 			children = (
 				EBD935FF1E62173C00686860 /* LinkedInOauth2 */,
 				EBD935FE1E62173C00686860 /* Products */,
+				EBCC27A24368412A3934282F /* Pods */,
+				2CEF23B638A6A372A75A1437 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +88,43 @@
 		EBD935FF1E62173C00686860 /* LinkedInOauth2 */ = {
 			isa = PBXGroup;
 			children = (
+				EBD9361A1E62210E00686860 /* Controllers */,
+				EBD936181E6220DB00686860 /* API */,
 				EBD936001E62173C00686860 /* AppDelegate.swift */,
 				EBD936041E62173C00686860 /* Main.storyboard */,
+				EBD936161E62199A00686860 /* Constants.swift */,
 				EBD936071E62173C00686860 /* Assets.xcassets */,
 				EBD936091E62173C00686860 /* LaunchScreen.storyboard */,
 				EBD9360C1E62173C00686860 /* Info.plist */,
-				EBD936121E6218BF00686860 /* LoginViewController.swift */,
-				EBD936141E6218E200686860 /* User.swift */,
-				EBD936161E62199A00686860 /* Constants.swift */,
 			);
 			path = LinkedInOauth2;
+			sourceTree = "<group>";
+		};
+		EBD936181E6220DB00686860 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EBD936191E6220EA00686860 /* Models */,
+				EBD9361B1E62214D00686860 /* APIValidMethods.swift */,
+				EBD9361D1E62217E00686860 /* APIManager.swift */,
+				EB8358931E622532008F59E5 /* ServiceError.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		EBD936191E6220EA00686860 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBD936141E6218E200686860 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EBD9361A1E62210E00686860 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBD936121E6218BF00686860 /* LoginViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBD9360F1E62173C00686860 /* Build configuration list for PBXNativeTarget "LinkedInOauth2" */;
 			buildPhases = (
+				49F55C9A5676B85D893885A2 /* [CP] Check Pods Manifest.lock */,
 				EBD935F91E62173C00686860 /* Sources */,
 				EBD935FA1E62173C00686860 /* Frameworks */,
 				EBD935FB1E62173C00686860 /* Resources */,
+				236FFFEE5B95AFD45EFC2729 /* [CP] Embed Pods Frameworks */,
+				5774742DD1066DCADE7477EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,14 +197,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		236FFFEE5B95AFD45EFC2729 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LinkedInOauth2/Pods-LinkedInOauth2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49F55C9A5676B85D893885A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5774742DD1066DCADE7477EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LinkedInOauth2/Pods-LinkedInOauth2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EBD935F91E62173C00686860 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD9361E1E62217E00686860 /* APIManager.swift in Sources */,
 				EBD936131E6218BF00686860 /* LoginViewController.swift in Sources */,
+				EBD9361C1E62214D00686860 /* APIValidMethods.swift in Sources */,
 				EBD936011E62173C00686860 /* AppDelegate.swift in Sources */,
 				EBD936151E6218E200686860 /* User.swift in Sources */,
+				EB8358941E622532008F59E5 /* ServiceError.swift in Sources */,
 				EBD936171E62199A00686860 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +300,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -239,6 +351,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -266,7 +379,9 @@
 		};
 		EBD936101E62173C00686860 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10C79FEAB3C784740F5AC7E4 /* Pods-LinkedInOauth2.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LinkedInOauth2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -278,7 +393,9 @@
 		};
 		EBD936111E62173C00686860 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27E5AC11F8FE43C2076AB665 /* Pods-LinkedInOauth2.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LinkedInOauth2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -307,6 +424,7 @@
 				EBD936111E62173C00686860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

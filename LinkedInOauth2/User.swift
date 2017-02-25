@@ -18,7 +18,7 @@ class User {
     var position: String = ""
     var token: String = ""
     var url: String = ""
-    
+
     // Custom Initializer for User Object
     init?(data: JSONDictionary) {
         guard let data =  data["data"] as? JSONDictionary,

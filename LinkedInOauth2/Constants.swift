@@ -9,3 +9,17 @@
 import Foundation
 
 typealias JSONDictionary = [String : Any]
+
+struct Api {
+    static let url = "INSERT API URL"
+
+    struct Auth {
+        static let login = "INSERT LOGIN ENDPOINT"
+    }
+    struct User {
+        static let me = "me"
+        static let login = "login"
+        static let signup = "register"
+        static let edit = "users/"
+    }
+}
