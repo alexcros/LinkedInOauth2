@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBD936011E62173C00686860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD936001E62173C00686860 /* AppDelegate.swift */; };
+		EBD936061E62173C00686860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD936041E62173C00686860 /* Main.storyboard */; };
+		EBD936081E62173C00686860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD936071E62173C00686860 /* Assets.xcassets */; };
+		EBD9360B1E62173C00686860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD936091E62173C00686860 /* LaunchScreen.storyboard */; };
+		EBD936131E6218BF00686860 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD936121E6218BF00686860 /* LoginViewController.swift */; };
+		EBD936151E6218E200686860 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD936141E6218E200686860 /* User.swift */; };
+		EBD936171E62199A00686860 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD936161E62199A00686860 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EBD935FD1E62173C00686860 /* LinkedInOauth2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedInOauth2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD936001E62173C00686860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBD936051E62173C00686860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBD936071E62173C00686860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBD9360A1E62173C00686860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBD9360C1E62173C00686860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD936121E6218BF00686860 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EBD936141E6218E200686860 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EBD936161E62199A00686860 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBD935FA1E62173C00686860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBD935F41E62173C00686860 = {
+			isa = PBXGroup;
+			children = (
+				EBD935FF1E62173C00686860 /* LinkedInOauth2 */,
+				EBD935FE1E62173C00686860 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBD935FE1E62173C00686860 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBD935FD1E62173C00686860 /* LinkedInOauth2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBD935FF1E62173C00686860 /* LinkedInOauth2 */ = {
+			isa = PBXGroup;
+			children = (
+				EBD936001E62173C00686860 /* AppDelegate.swift */,
+				EBD936041E62173C00686860 /* Main.storyboard */,
+				EBD936071E62173C00686860 /* Assets.xcassets */,
+				EBD936091E62173C00686860 /* LaunchScreen.storyboard */,
+				EBD9360C1E62173C00686860 /* Info.plist */,
+				EBD936121E6218BF00686860 /* LoginViewController.swift */,
+				EBD936141E6218E200686860 /* User.swift */,
+				EBD936161E62199A00686860 /* Constants.swift */,
+			);
+			path = LinkedInOauth2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBD935FC1E62173C00686860 /* LinkedInOauth2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD9360F1E62173C00686860 /* Build configuration list for PBXNativeTarget "LinkedInOauth2" */;
+			buildPhases = (
+				EBD935F91E62173C00686860 /* Sources */,
+				EBD935FA1E62173C00686860 /* Frameworks */,
+				EBD935FB1E62173C00686860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkedInOauth2;
+			productName = LinkedInOauth2;
+			productReference = EBD935FD1E62173C00686860 /* LinkedInOauth2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBD935F51E62173C00686860 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Alex Cros";
+				TargetAttributes = {
+					EBD935FC1E62173C00686860 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EBD935F81E62173C00686860 /* Build configuration list for PBXProject "LinkedInOauth2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBD935F41E62173C00686860;
+			productRefGroup = EBD935FE1E62173C00686860 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBD935FC1E62173C00686860 /* LinkedInOauth2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBD935FB1E62173C00686860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD9360B1E62173C00686860 /* LaunchScreen.storyboard in Resources */,
+				EBD936081E62173C00686860 /* Assets.xcassets in Resources */,
+				EBD936061E62173C00686860 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBD935F91E62173C00686860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD936131E6218BF00686860 /* LoginViewController.swift in Sources */,
+				EBD936011E62173C00686860 /* AppDelegate.swift in Sources */,
+				EBD936151E6218E200686860 /* User.swift in Sources */,
+				EBD936171E62199A00686860 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EBD936041E62173C00686860 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBD936051E62173C00686860 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBD936091E62173C00686860 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBD9360A1E62173C00686860 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBD9360D1E62173C00686860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBD9360E1E62173C00686860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBD936101E62173C00686860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LinkedInOauth2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexcros.LinkedInOauth2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EBD936111E62173C00686860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LinkedInOauth2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexcros.LinkedInOauth2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBD935F81E62173C00686860 /* Build configuration list for PBXProject "LinkedInOauth2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD9360D1E62173C00686860 /* Debug */,
+				EBD9360E1E62173C00686860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBD9360F1E62173C00686860 /* Build configuration list for PBXNativeTarget "LinkedInOauth2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBD936101E62173C00686860 /* Debug */,
+				EBD936111E62173C00686860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBD935F51E62173C00686860 /* Project object */;
+}
