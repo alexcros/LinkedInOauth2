@@ -23,3 +23,9 @@ struct Api {
         static let edit = "users/"
     }
 }
+
+struct Linkedin {
+    // hardcoded values. This values has to come from the API response.. not here :)
+    static let clientId = "LINKEDIN CLIENT ID"
+    static let secretId = "LINKEDIN SECRET ID"
+}

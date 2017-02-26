@@ -12,9 +12,9 @@ import Foundation
 import PromiseKit
 
 class APIManager {
-    
+
     let defaults = UserDefaults.standard
-    
+
     func call(_ method: APIValidMethods, urlString: String, params: String?) -> Promise<JSONDictionary> {
         guard let url = URL(string: Api.url + urlString) else {
             return Promise { fulfill, reject in
@@ -26,13 +26,12 @@ class APIManager {
         let token: String = (defaults.string(forKey: "token") != nil) ? defaults.string(forKey: "token")! : ""
         request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         let session = URLSession(configuration:URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
-        
+
         return Promise { fulfill, reject in
             let dataTask = session.dataTask(with: request, completionHandler: {
                 (data: Data?, response: URLResponse?, error: Error?) in
-                
+
                 if error != nil {
-                    print("error in dataTask")
                     reject(error!)
                 } else {
                     guard let data = data else {reject(ServiceError.invalidRequest); return}

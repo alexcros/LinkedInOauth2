@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		59FE673939413E089372E4BE /* Pods_LinkedInOauth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435E95B72F87E37A5EE08141 /* Pods_LinkedInOauth2.framework */; };
 		EB8358941E622532008F59E5 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8358931E622532008F59E5 /* ServiceError.swift */; };
+		EB8358961E622A12008F59E5 /* LinkedinWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8358951E622A12008F59E5 /* LinkedinWebViewController.swift */; };
+		EB8358991E6340D8008F59E5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8358981E6340D8008F59E5 /* StringExtension.swift */; };
+		EB83589C1E6341A4008F59E5 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83589B1E6341A4008F59E5 /* AuthManager.swift */; };
 		EBD936011E62173C00686860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD936001E62173C00686860 /* AppDelegate.swift */; };
 		EBD936061E62173C00686860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD936041E62173C00686860 /* Main.storyboard */; };
 		EBD936081E62173C00686860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD936071E62173C00686860 /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 		27E5AC11F8FE43C2076AB665 /* Pods-LinkedInOauth2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedInOauth2.release.xcconfig"; path = "Pods/Target Support Files/Pods-LinkedInOauth2/Pods-LinkedInOauth2.release.xcconfig"; sourceTree = "<group>"; };
 		435E95B72F87E37A5EE08141 /* Pods_LinkedInOauth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkedInOauth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8358931E622532008F59E5 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		EB8358951E622A12008F59E5 /* LinkedinWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedinWebViewController.swift; sourceTree = "<group>"; };
+		EB8358981E6340D8008F59E5 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		EB83589B1E6341A4008F59E5 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		EBD935FD1E62173C00686860 /* LinkedInOauth2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedInOauth2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD936001E62173C00686860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD936051E62173C00686860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +64,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EB8358971E6340C4008F59E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB8358981E6340D8008F59E5 /* StringExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		EB83589A1E63418A008F59E5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EB83589B1E6341A4008F59E5 /* AuthManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		EBCC27A24368412A3934282F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +110,8 @@
 		EBD935FF1E62173C00686860 /* LinkedInOauth2 */ = {
 			isa = PBXGroup;
 			children = (
+				EB83589A1E63418A008F59E5 /* Managers */,
+				EB8358971E6340C4008F59E5 /* Extensions */,
 				EBD9361A1E62210E00686860 /* Controllers */,
 				EBD936181E6220DB00686860 /* API */,
 				EBD936001E62173C00686860 /* AppDelegate.swift */,
@@ -123,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				EBD936121E6218BF00686860 /* LoginViewController.swift */,
+				EB8358951E622A12008F59E5 /* LinkedinWebViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -162,6 +187,7 @@
 				TargetAttributes = {
 					EBD935FC1E62173C00686860 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -255,8 +281,11 @@
 				EBD9361C1E62214D00686860 /* APIValidMethods.swift in Sources */,
 				EBD936011E62173C00686860 /* AppDelegate.swift in Sources */,
 				EBD936151E6218E200686860 /* User.swift in Sources */,
+				EB8358991E6340D8008F59E5 /* StringExtension.swift in Sources */,
+				EB8358961E622A12008F59E5 /* LinkedinWebViewController.swift in Sources */,
 				EB8358941E622532008F59E5 /* ServiceError.swift in Sources */,
 				EBD936171E62199A00686860 /* Constants.swift in Sources */,
+				EB83589C1E6341A4008F59E5 /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
